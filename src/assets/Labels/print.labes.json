@@ -1,0 +1,11 @@
+{
+    "address":"Address Line 1, Address Line 2,City, State, ZIP",
+    "contactInfo": "Phone: (123) 456-7890 | Email:info@yourcompany.com",
+    "heading": "TAX INVOICE",
+    "invoiceName": "Guest Name",
+    "invoiceGst": "GSTIN No.",
+    "invoiceDate": "Date",
+    "invoiceInfo": "C.M.No. ",
+    "invoiceGSTNo": "GSTInv No ",
+    "seatNumber": "Seat Number"
+}

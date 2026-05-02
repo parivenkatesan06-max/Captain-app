@@ -1,0 +1,14 @@
+{
+    "Kuppanna" :{
+        "menuTitle":"Junior Kuppanna Menu's List",
+        "qrTitle":"Generate a QR code for your restaurant table",
+        "qrCodeTitle":"Junior Kuppanna",
+        "table":"Table"
+    },
+    "PVR" :{
+        "menuTitle":"PVR Snacks List",
+        "qrTitle":"Generate a QR code for your theatre seat",
+        "qrCodeTitle":"PVR",
+        "table": "Seat"
+    }
+}

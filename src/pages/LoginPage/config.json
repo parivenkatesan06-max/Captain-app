@@ -1,0 +1,35 @@
+{
+    "inputs": {
+        "email": {
+            "id": "email",
+            "name": "email",
+            "label": "Enter Email Address",
+            "required": true,
+            "placeholder": "Enter Email Address",
+            "validationMessages": {
+                "required": "Email is required",
+                "pattern": "Invalid email address. Please enter a valid email"
+            },
+            "inputConfig": {
+                "regexp": "^\\w+([\\.-]?\\w+)@\\w+([\\.-]?\\w+)(\\.\\w{2,3})+$"
+            }
+        },
+        "password": {
+            "id": "password",
+            "name": "password",
+            "label": "Enter Password",
+            "required": true,
+            "placeholder": "Enter Password",
+            "validationMessages": {
+                "required": "Password is required"
+            },
+            "inputConfig": {
+                "minLength": 8
+            }
+        }
+    },
+    "checkboxText": {
+        "beforeText": "I agree to the ",
+        "hrefText": "Terms & Conditions"
+    }
+}

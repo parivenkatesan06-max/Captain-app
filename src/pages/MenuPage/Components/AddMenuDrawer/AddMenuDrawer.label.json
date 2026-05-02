@@ -1,0 +1,17 @@
+{
+    "menuName": "Menu Name",
+    "menuCategory": "Menu Category",
+    "price": "Price",
+    "quantity": "Quantity",
+    "image": "Image",
+    "offerPct": "Offer Percentage",
+    "menuDescription": "Menu Description",
+    "addToList": "Add To List",
+    "menuCategoryPlaceholder": "Enter Menu Category",
+    "menuNameRequired": "Menu name is required",
+    "menuCategoryRequired": "Please select a category",
+    "priceRequired": "Price is required",
+    "pricePositiveNumber": "Price must be a positive number",
+    "imageRequired": "Image is required",
+    "menuDescriptionRequired": "Menu Description is required"
+}

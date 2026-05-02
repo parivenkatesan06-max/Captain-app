@@ -1,0 +1,66 @@
+@import "../../styles/base/variables.module";
+
+.counterButton {
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--numberInput-bg-color);
+    border-radius: 0.625rem;
+    padding: 0.3125rem 0.625rem;    
+    font-size: 1rem;
+    font-weight: bold;
+
+    .iconButton {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 0.75rem;
+        width: 0.5625rem;
+        height: 1.0625rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:focus {
+            outline: none;
+        }
+        svg {
+            color: var(--numberInput-text-color);
+        }
+    }
+
+    .count {
+        margin: 0 0.5rem;
+    }
+
+    .ant-input-number-handler-wrap {
+        display: none;
+    }
+}
+
+.inputNumber {
+    width: 2rem;
+    height: 1.5rem;
+    text-align: center;
+    background-color: var(--numberInput-bg-color);
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: none;
+    margin-left: 0.4375rem;
+    margin-right: 0.4375rem;
+    :global {
+        .ant-input-number-input {
+            color: var(--numberInput-text-color);
+            text-align: center;
+            padding: 0px;
+        }
+    }
+    &:hover {
+        background-color: var(--numberInput-bg-color);
+    }
+
+    &:not(:hover) {
+        background-color: var(--numberInput-bg-color);
+    }
+}

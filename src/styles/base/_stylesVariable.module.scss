@@ -1,0 +1,70 @@
+//Bottom Nav bar button 
+$cart-continue-btn-width: 21.125rem;
+$cart-continue-btn-height: 2.5rem;
+$view-cart-btn-height: 1.125rem;
+//Menu card number input 
+$number-input-width: 7.5625rem;
+//order table view 
+$number-input-width-order-table: 5rem;
+$icon-font-size: 1.625rem;
+//delete user page 
+$typo-font-size: 1.2rem;
+//inventory page 
+$arrowUp-outlined-font-size: 0.75rem;
+//login page
+$welcome-marginTop:1.875rem;
+//menu drawer 
+$number-input-width-menu-drawer: 5rem;
+//order detail page 
+$logout-btn-height: 3.3125rem;
+$order-detail-margin: 2.125rem;
+//QRList 
+$qrList-minWidth: 6.875rem;
+//screens orderinfo 
+$screens-font-size: 0.875rem;
+$print-btn-width: 16rem;
+//signup page 
+$signup-welcome-marginTop: 1.875rem;
+//Table page
+$tablePage-height: 3.3125rem;
+$tablePage-rowGap: 3.25rem;
+$tablePage-columnGap: 1.375rem;
+$tablePage-breadcrumbs-width: 59rem;
+
+//Common variable
+$zero-px: 0px;
+$half-rem: 0.5rem;
+$one-rem: 1rem;
+$one-point-five-rem: 1.5rem;
+$two-rem: 2rem;
+$width-cent-percent: 100%;
+
+// exported variable for antd ConfigProvider.if we want to use in scss file directly @import "../../styles/base/_stylesVariable.module";
+:export {
+    cartContinueBtnWidth: $cart-continue-btn-width;
+    cartContinueBtnHeight: $cart-continue-btn-height;
+    viewCartBtnHeight: $view-cart-btn-height;
+    numberInputWidth: $number-input-width;
+    numberInputWidthOrderTable: $number-input-width-order-table;
+    iconFontSize: $icon-font-size;
+    zeroPX: $zero-px;
+    halfRem: $half-rem;
+    oneRem: $one-rem;
+    onePointFiveRem: $one-point-five-rem;
+    twoRem: $two-rem;
+    typoFontSize: $typo-font-size;
+    arrowUpOutlinedFontSize:$arrowUp-outlined-font-size;
+    welcomeMarginTop: $welcome-marginTop;
+    widthCentPercent: $width-cent-percent;
+    numberInputWidthMenuDrawer: $number-input-width-menu-drawer;
+    logoutBtnHeight: $logout-btn-height;
+    orderDetailMargin: $order-detail-margin;
+    qrListMinWidth: $qrList-minWidth;
+    screensFontSize: $screens-font-size;
+    signupWelcomeMarginTop: $signup-welcome-marginTop;
+    tablePageHeight: $tablePage-height;
+    tablePageRowGap: $tablePage-rowGap;
+    tablePageColumnGap: $tablePage-columnGap;
+    tablePageBreadcrumbsWidth: $tablePage-breadcrumbs-width;
+    printBtnWidth: $print-btn-width;
+} 

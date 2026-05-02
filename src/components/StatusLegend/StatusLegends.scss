@@ -1,0 +1,32 @@
+@import "../../styles/base/variables.module";
+@mixin status-dot($size: 10px) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.status-indicator {
+    display: flex;
+    padding: 8px;
+    margin-top: 2rem;
+    border-radius: 4px;
+    height: 24px;
+
+    gap: 40px;
+
+    .status-item {
+        display: flex;
+        align-items: center;
+
+        .status-dot {
+            @include status-dot(18px); 
+        }
+        .status-label {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: $secondary-text-color;
+        }
+    }
+}

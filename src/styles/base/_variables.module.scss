@@ -1,0 +1,144 @@
+/* Default Light Theme (Light Orange) */
+:root {
+    --captain-primary-color: #D87500;
+    --captain-secondary-color: #e19c4b;
+    --captain-hover-color:  #ffedd9;
+}
+
+/* Blue Theme */
+[data-theme='blue'] {
+    --captain-primary-color: #3684E9;
+    --captain-secondary-color: #6BA6F0;
+    --captain-hover-color: #D7EBFF;
+}
+
+/* Green Theme */
+[data-theme='green'] {
+    --captain-primary-color: #038828;
+    --captain-secondary-color: #5FB97F;
+    --captain-hover-color: #CFF6D7; 
+}
+
+/* Purple Theme */
+[data-theme='purple'] {
+    --captain-primary-color: #9E57E1;
+    --captain-secondary-color: #BB80E2;
+    --captain-hover-color: #EDD6FB;
+}
+
+/* Yellow Theme */
+[data-theme='yellow'] {
+    --captain-primary-color: #FFBD44;
+    --captain-secondary-color: #FFCC66;
+    --captain-hover-color: #FFF1CC;
+}
+
+/* Red Theme */
+[data-theme='red'] {
+    --captain-primary-color: #E75E5C;
+    --captain-secondary-color: #F59C9A;
+    --captain-hover-color: #FFD8D7; 
+}
+
+
+
+$bg-color: #f7f8fa;
+$font-stack: "Helvetica, sans-serif";
+
+$table-bg-color: #ffffff;
+
+$primay-text-color: #333333;
+$secondary-text-color: #000000;
+
+$button-primary-bg-color: var(--captain-primary-color);
+$button-primary-hovor-color: #fcf2e6;
+
+$buttonRadius: 1.875rem;
+$border-color: #ddd;
+//sidebar
+$logo-border-color: #e8e8e8;
+$bgPrimary: #f2f0f5;
+
+//addnewmenu-container
+$icon-color: var(--captain-secondary-color);
+$box-background-color: #fdfdfd;
+// lagend status color
+$booked-bg-color: #6aa2f6;
+$served-bg-color: #ffe603;
+$paid-bg-color: #2fc647;
+$paymentpending-bg-color:  #f66a6a;
+$notoccupaid-bg-color: #c7c7c7;
+
+//screenwidget
+$screen-hover-color: var(--captain-hover-color);
+// MenuTable
+$primay-menutable-text-color: #8e8c8c;
+//Placeholder
+$placeholder-primary-text-color: rgba(51, 51, 51, 0.5); 
+
+//menuItem
+$menuItem-primary-text-color: var(--captain-primary-color);
+$menuItem-secondary-text-color: #5c554c;
+
+//OrderTableView
+$tableView-bg-color: #ffffff;
+$tableView-secondary-bg-color: #fcfcfc;
+$table-icon-color: var(--captain-primary-color);
+$table-border-color: #dbd1d1;
+
+// NumberInput
+$numberInput-bg-color: var(--captain-primary-color);
+$numberInput-text-color: #ffffff;
+
+
+// loginPage
+$login-background-color: #ffffff;
+$login-text-section-bg-color: #ffffff1a;
+$login-text-color: #ffffff;
+$login-button-bg-color: #d39f68;
+$login-box-shadow-color: rgba(0, 0, 0, 0.1);
+$login-image-text-bg-color: rgba(0, 0, 0, 0.5);
+
+// Loader
+$loader-backgroud-color: #ffffff;
+
+// Mobile bg color
+$mobile-background-color: #ffffff;
+$mobile-secondry-background-color: #ffebd4;
+$mobile-primary-text-color: #d9a679;
+$mobile-secondary-text-color: #d87500;
+$mobile-secondry-button-color: #e19c4b; 
+$mobile-button-color: #ff7f0e;
+
+// Report component 
+$percentage-background-primarycolor: #02B602;
+$percentage-background-secondarycolor: #FF3B30;
+
+$dropdown-background: #F7F8FA80;
+$link-primary: #007bff;
+
+// exported variable for antd ConfigProvider.if we want to use in scss file directly @import "../../styles/base/variables.module";
+:export {
+    textSecondary: $secondary-text-color;
+    buttonPrimary: $button-primary-bg-color;
+    buttonHover:$button-primary-hovor-color;
+    buttonRadius: $buttonRadius;
+    paidColor:$paid-bg-color;
+    servedBgColor: $served-bg-color;
+    bookedBgColor: $booked-bg-color;
+    PaymentPendingBgColor: $paymentpending-bg-color;
+    notOccupaidBgColor: $notoccupaid-bg-color;
+    menuItemPrimaryTextColor: $menuItem-primary-text-color;
+    placeholderTextPrimary: $placeholder-primary-text-color;
+    bgPrimary: $bg-color;
+    textPrimary: $primay-text-color;
+    inputNumberBgColor:$numberInput-bg-color;
+    inputNumberTextColor:$numberInput-text-color;
+    tableBgColor: $table-bg-color;
+    percentageBgColor: $percentage-background-primarycolor;
+    tableIconColor: $table-icon-color;
+    consumerButtonColor: $mobile-secondary-text-color;
+    consumerButtonSecondaryColor: $mobile-secondry-button-color;
+    dropdownBackground: $dropdown-background;
+    iconColor: $icon-color;
+}

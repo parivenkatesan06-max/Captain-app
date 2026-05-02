@@ -1,0 +1,90 @@
+@import "../../../styles/base/variables.module";
+
+.todaySpecialCard {
+    width: 95%;
+    height: 9.625rem;
+    border-radius: 1.2831rem;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    :global {
+        .ant-card-body {
+            padding: 0;
+        }
+    }
+}
+.todaySpecialCardSkeleton {
+    width: 45%;
+    height: 9.625rem;
+    border-radius: 1.2831rem;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    margin-left: 1.125rem;
+    :global {
+        .ant-card-body {
+            padding: 0px;
+        }
+    }
+}
+
+.todaySpecialOfferContainer {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 9.625rem;
+    object-fit: cover;
+}
+
+.titleOverlay {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $mobile-background-color;
+    bottom: 0;
+    padding-bottom: 0.9375rem;
+    background-color: $mobile-secondry-button-color;
+}
+
+.errorTitleOverlay {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $mobile-background-color;
+    bottom: 0;
+    padding-bottom: 0.9375rem;
+    background-color: $mobile-secondry-button-color;
+}
+
+.titleContainer {
+    width: auto;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}

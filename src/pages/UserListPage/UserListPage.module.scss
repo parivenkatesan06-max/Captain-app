@@ -1,0 +1,20 @@
+@import "../../styles/base/variables.module";
+
+.undoIcon {
+    color:  $table-icon-color;
+    background-color: $tableView-bg-color;
+    border-radius: 50%;
+    height: 1.625rem;
+    width: 1.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.125rem solid  $table-icon-color;
+}
+
+.userContainer {
+    padding: 1.5625rem;
+    border-radius: 0.625rem;
+    background-color: $tableView-bg-color;
+    box-shadow: 0px 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}

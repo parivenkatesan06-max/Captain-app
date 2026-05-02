@@ -1,0 +1,81 @@
+@import "../../../../styles/base/variables.module";
+
+.mainContainer {
+    width: 18.25rem;
+    height: 158px;
+    background-color: $table-bg-color;
+    border-radius: 0.9375rem;
+}
+
+.contentContainer{
+    margin: 0.9375rem;
+    height: 8rem;
+}
+
+.headContainer {
+    height: 2.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bodyContainer {
+    height: 60px;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconSize {
+    width: 2.75rem;
+    height: 2.75rem;
+}
+
+.percentageContainerGreen {
+    width: 4.1875rem;
+    height: 1.6875rem;
+    background-color: $percentage-background-primarycolor;
+    border-radius: 0.625rem;
+    color: $table-bg-color;
+    text-align: center;
+    align-content: center;
+}
+.percentageContainerRed {
+    width: 4.1875rem;
+    height: 1.6875rem;
+    background-color: $percentage-background-secondarycolor;
+    border-radius: 0.625rem;
+    color: $table-bg-color;
+    text-align: center;
+    align-content: center;
+}
+
+.bodyTotalTitle {
+    font-size: 1rem;
+    line-height: 1.2188rem;
+    font-weight: 500;
+    margin: 0;
+    color: $mobile-secondary-text-color;
+}
+
+.bodyTotalAmount{
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.9806rem;
+    margin: 0;
+}
+
+.bodyTimeContainer{
+    display: flex;
+}
+
+.bodyTimePeriod{
+    color: $primay-text-color;
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin: 0;
+    align-content: end;
+}
+.totalContainer{
+    align-content: end;
+}
+

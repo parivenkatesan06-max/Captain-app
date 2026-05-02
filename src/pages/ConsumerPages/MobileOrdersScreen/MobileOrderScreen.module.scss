@@ -1,0 +1,62 @@
+@import "../../../styles/base/variables.module";
+.productContainer {
+    width: auto;
+    height: auto;
+    max-height: 47.9375rem; 
+    background-color: $mobile-background-color;
+    overflow-y: auto; 
+    border-radius: 1.25rem;
+    padding-top: 0.9375rem;
+    margin-bottom: 5rem;
+    scrollbar-width:none;
+    @media (min-width: 767px) {
+        width: 840px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    margin-bottom: 5rem;
+    @media (min-width: 767px) {
+        width: 840px;
+    }
+}
+.orderSummary {
+    width: auto;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    background-color: $mobile-background-color;
+    margin-top: 0.9375rem;
+    margin-bottom: 5rem;
+  }
+  
+  .title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .summaryContent {
+    font-size: 1rem;
+  }
+  
+  .row {
+    margin-bottom: 0.5rem;
+  }
+    
+  .totalRow {
+    font-weight: bold;
+  }
+  
+  .totalLabel {
+    color: $mobile-secondary-text-color;
+  }
+  
+  .totalValue {
+    color: $mobile-secondary-text-color;
+    font-size: 1.125rem;
+  }

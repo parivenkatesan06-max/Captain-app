@@ -1,0 +1,82 @@
+@import "../../styles/base/variables.module";
+.menuItem {
+    max-width: 12.075rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+
+    :global {
+        .ant-card-cover {
+            width: 12.075rem;
+            height: 8.8125rem;
+            overflow: hidden;
+        }
+        .ant-card-body {
+            padding: 0.75rem;
+        }
+    }
+
+    .title {
+        font-size: 0.938rem;
+        font-weight: 500;
+        color: $menuItem-primary-text-color;
+    }
+
+    .subtitle {
+        font-size: 0.688rem;
+        color: $menuItem-secondary-text-color;
+        margin-bottom: 0.5rem;
+    }
+
+    .price {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $menuItem-secondary-text-color;
+    }
+
+    .quantity {
+        font-size: 0.75rem;
+        color: $table-bg-color;
+        background-color: $menuItem-primary-text-color;
+        padding: 0.125rem 0.5rem;
+        border-radius: 0.75rem;
+    }
+    .cardImage {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        transition: transform 0.5s ease;
+    }
+
+    .cardImage:hover {
+        transform: scale(1.1);
+    }
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 8.8125rem;
+    overflow: hidden;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlayText {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+

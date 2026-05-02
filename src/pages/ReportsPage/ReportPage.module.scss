@@ -1,0 +1,84 @@
+@import "../../styles/base/variables.module";
+.reportCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    width: 37.75rem;
+    height: 100%;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.reportContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1400px) {
+    .contentWrapper {
+        flex-direction: row;
+    }
+    .reportContainer{
+        flex-direction: column;
+    }
+    .pieContainer{
+        margin-top: 1.25rem;
+        flex-direction: row;
+    }
+}
+.spinDataContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $button-primary-bg-color;
+}
+.lottieContainer{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $button-primary-bg-color;
+}
+.spinWrapper {
+    font-size: 50px;
+    :global{
+        .anticon-loading {
+            font-size: 2.125rem;
+            color: $button-primary-bg-color;
+        }
+        .ant-spin-dot {
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
+.submitBtn{
+    :global {
+        .ant-btn {
+            width: 25%;
+        }
+    }
+}
+
+// Form component styles
+.clientSelect {
+    width: 200px;
+    height: 40px;
+}
+
+.reportTypeSelect {
+    width: 120px;
+    height: 40px;
+}
+
+.datePicker {
+    width: 200px;
+    height: 40px;
+}

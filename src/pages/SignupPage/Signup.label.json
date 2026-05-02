@@ -1,0 +1,8 @@
+{
+    "heading": "Create an account",
+    "description": "Create an admin account to streamline your operations, track inventory, and manage orders efficiently for your venue.",
+    "buttonLabel": "Create Account",
+    "linkText": "Already have an account? ",
+    "linkLabel": "Login",
+    "loginLink": "/login"
+}

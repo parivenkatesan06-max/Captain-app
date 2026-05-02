@@ -1,0 +1,12 @@
+{
+    "drawerTitle": "Edit Items",
+    "uploadedSuccess": "Upload Template Successfully!",
+    "uploadSuccess": "Data uploaded successfully!",
+    "editSuccess": "Changes update Successfully!",
+    "cancelButton": "Cancel",
+    "saveButton": "Save",
+    "deleteButton": "Delete",
+    "submitButton": "Submit",
+    "deleteConfirmMessage": "Are you sure to delete ${items} from inventory list?",
+    "saveConfirmMessage": "Are you sure you want to save this changes?"
+}

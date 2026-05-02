@@ -1,0 +1,114 @@
+@import "../../../styles/base/variables.module";
+
+.menuCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+    &.loading {
+      margin-bottom: 0rem;
+  }
+  }
+  
+  .card {
+    width: auto;
+    height: 11.75rem;
+    margin-bottom: 0.625rem;
+    border-radius: 1.25rem;
+    :global{
+        .ant-card-body{
+            padding: 0;
+            border-radius: 0px;
+            width: auto;
+            height: 10.75rem;
+        }
+    }
+  }
+  
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    width: 10.4375rem;
+    height: 8.875rem;
+    margin-left: 0.9375rem;
+    margin-top: 0.9375rem;
+    :global{
+        .ant-typography{
+            margin: 0;
+        }
+    }
+  }
+  
+  .priceSection {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  .originalPrice {
+    color: #f56b00;
+    text-decoration: line-through;
+  }
+  
+  .discountedPrice {
+    color: #f56b00;
+    font-weight: bold;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    padding: 0;
+    width: 7.5625rem;
+    height: 2.5rem;
+    border-radius: 0.9375rem;
+    background-color: $mobile-secondary-text-color;
+    :global {
+      .ant-btn-variant-solid {
+          color: $mobile-secondary-text-color;
+      } 
+  }
+}
+  
+  .menuImage {
+    width: 10.625rem;
+    height: 8.25rem;
+    object-fit: cover;
+    border-radius: 0.9375rem;
+  }
+
+  .imageContainer{
+    width: 10.625rem;
+    height: 8.25rem;
+    margin-top: 0.625rem;
+    margin-right: 1.875rem;
+    position: relative;
+    display: flex;
+  }
+
+  .buttonContainer{
+    width: 7.5625rem;
+    height: 2.5rem;
+    margin-top: 7rem;
+    margin-left: 1.5rem;
+    position: absolute;
+    overflow: hidden;
+  }
+  .overlayText {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}

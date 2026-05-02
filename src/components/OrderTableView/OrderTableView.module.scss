@@ -1,0 +1,63 @@
+@import "../../styles/base/variables.module";
+
+.tableContainer {
+    // width: 100%;
+    height: auto;
+    padding: 25px;
+    border-radius: 0.625rem;
+    background-color: $tableView-bg-color;
+    box-shadow: 0px 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+
+.buttonContainer {
+    margin-top: 23px;
+}
+
+.ant-table table .ant-table-thead > tr > th {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.ant-table table .ant-table-tbody > tr > td {
+    border-width: 0.03125rem 0px 0.03125rem 0.03125rem;
+    justify-content: center;
+    border-style: solid;
+    border-color: $table-border-color;
+}
+
+.undoIcon {
+    color:  $table-icon-color;
+    background-color: $tableView-bg-color;
+    border-radius: 50%;
+    height: 1.625rem;
+    width: 1.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.125rem solid  $table-icon-color;
+}
+.numberInput {
+    display: flex;
+    justify-content: center;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.summaryContainer {
+    margin-top: 1rem;
+    gap: 1rem;
+    display: flex;
+    width: 350px;
+    justify-content: stretch;
+    flex-direction: column;
+    font-weight: 600;
+    border: 1px solid $border-color;
+    padding: 1.5rem;
+    border-radius: 0.875rem;
+  }
+  

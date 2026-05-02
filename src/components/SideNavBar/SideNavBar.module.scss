@@ -1,0 +1,111 @@
+@import "../../styles/base/variables.module";
+
+.siderBody {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    flex-direction: column;
+}
+
+.customSidebar {
+    background-color: $table-bg-color; // White background color
+    overflow: hidden;
+    position: fixed;
+    height: 100vh;
+    top: 0rem;
+    left: 0rem;
+    background-image: var(--captain-bg-image);
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
+    height: 100%;
+
+    :global {
+        .ant-layout-sider-children {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.customSidebarMenu {
+    border: none;
+    padding: 0 1.25rem 0 1.25rem; // 20px
+    flex-grow: 1;
+    background: transparent;
+    height: 100%;
+
+    :global {
+        .ant-menu-item {
+            color: $secondary-text-color;
+            border-radius: 1.25rem; // 20px
+            display: flex;
+            justify-content: flex-start;  // Align items to the left
+            align-items: center;
+            margin-bottom: 1.25rem; // 20px
+            font-size: 1.0625rem; // 17px
+    
+            .ant-menu-item-icon {
+                margin-right: 0.5rem;  
+            }
+    
+            &:first-child {
+                margin-top: 1.25rem; // 20px
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                background-color: rgba(
+                    $menuItem-primary-text-color,
+                    0.1
+                ); // With 10% opacity
+                border-radius: 1.25rem; // 20px
+            }
+        }
+
+        .ant-menu-item-selected {
+            background-color:  $menuItem-primary-text-color;
+            color: $numberInput-text-color;
+            border-radius: 1.25rem; // 20px
+
+            .icon-selected {
+                fill: $numberInput-text-color;
+            }
+        }
+
+        .icon-default {
+            fill: $secondary-text-color;
+        }
+
+        .ant-menu-item-selected:hover {
+            background-color:  $menuItem-primary-text-color;
+            border-radius: 1.25rem; // 20px
+        }
+
+        .ant-menu-item svg {
+            margin-left: -5px; 
+        }
+    }
+    
+}
+
+.sidebarLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem; // 20px
+}
+
+.logoImage {
+    width: 6.25rem; // 100px
+    height: auto;
+}
+
+.iconContainer {
+    font-size: 1rem; 
+    margin-top: 0.8125rem; 
+    padding-right: 0.625rem; 
+  }

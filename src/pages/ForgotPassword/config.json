@@ -1,0 +1,18 @@
+{
+    "inputs": {
+        "email": {
+            "id": "email",
+            "name": "email",
+            "label": "Enter Email Address",
+            "required": true,
+            "placeholder": "Enter Email Address",
+            "validationMessages": {
+                "required": "Email is required",
+                "pattern": "Invalid email address. Please enter a valid email"
+            },
+            "inputConfig": {
+                "regexp": "^\\w+([\\.-]?\\w+)@\\w+([\\.-]?\\w+)(\\.\\w{2,3})+$"
+            }
+        }
+    }
+}

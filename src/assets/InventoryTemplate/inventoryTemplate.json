@@ -1,0 +1,114 @@
+{
+    "Hotel": [
+        {
+            "Item Category": "Non Veg",
+            "Item Name": "Chicken",
+            "Unit Price": 250,
+            "Quantity": 4
+        },
+        {
+            "Item Category": "Non Veg",
+            "Item Name": "Mutton",
+            "Unit Price": 1000,
+            "Quantity": 6
+        },
+        {
+            "Item Category": "Non Veg",
+            "Item Name": "Fish",
+            "Unit Price": 500,
+            "Quantity": 1
+        },
+        {
+            "Item Category": "Non Veg",
+            "Item Name": "Crab",
+            "Unit Price": 150,
+            "Quantity": 6
+        },
+        {
+            "Item Category": "Vegetables",
+            "Item Name": "Tomato",
+            "Unit Price": 20,
+            "Quantity": 10
+        },
+        {
+            "Item Category": "Vegetables",
+            "Item Name": "Onion",
+            "Unit Price": 52,
+            "Quantity": 10
+        },
+        {
+            "Item Category": "Vegetables",
+            "Item Name": "Potato",
+            "Unit Price": 20,
+            "Quantity": 20
+        },
+        {
+            "Item Category": "Fruits",
+            "Item Name": "Stawberry",
+            "Unit Price": 200,
+            "Quantity": 4
+        },
+        {
+            "Item Category": "Fruits",
+            "Item Name": "Blueberry",
+            "Unit Price": 80,
+            "Quantity": 5
+        }
+    ],
+    "Theatre": [
+        {
+            "Item Category": "Snacks",
+            "Item Name": "Popcorn (Small)",
+            "Unit Price": 100,
+            "Quantity": 20
+        },
+        {
+            "Item Category": "Snacks",
+            "Item Name": "Popcorn (Large)",
+            "Unit Price": 200,
+            "Quantity": 10
+        },
+        {
+            "Item Category": "Drinks",
+            "Item Name": "Coke (500ml)",
+            "Unit Price": 50,
+            "Quantity": 15
+        },
+        {
+            "Item Category": "Drinks",
+            "Item Name": "Coke (1L)",
+            "Unit Price": 100,
+            "Quantity": 10
+        },
+        {
+            "Item Category": "Snacks",
+            "Item Name": "Nachos",
+            "Unit Price": 150,
+            "Quantity": 8
+        },
+        {
+            "Item Category": "Confectionery",
+            "Item Name": "Candy",
+            "Unit Price": 20,
+            "Quantity": 50
+        },
+        {
+            "Item Category": "Snacks",
+            "Item Name": "Samosa",
+            "Unit Price": 40,
+            "Quantity": 30
+        },
+        {
+            "Item Category": "Drinks",
+            "Item Name": "Water Bottle (500ml)",
+            "Unit Price": 20,
+            "Quantity": 25
+        },
+        {
+            "Item Category": "Drinks",
+            "Item Name": "Water Bottle (1L)",
+            "Unit Price": 40,
+            "Quantity": 15
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+.contentWrapper {
+    padding: 2rem 3.125rem 0 3.125rem;
+}
+@media (max-width: 1024px) {
+    .contentWrapper {
+        padding: 2rem 1rem 0 1rem; 
+    }
+}
+
+// Loader styles
+.ant-spin-fullscreen {
+    background-color: $loader-backgroud-color;
+}
+
+.ant-spin-fullscreen .spinWrapper .ant-spin-text {
+    color: $button-primary-bg-color;
+}
+
+.spinWrapper {
+    font-size: 50px;
+    .anticon-loading {
+        font-size: 50px;
+        color: $button-primary-bg-color;
+    }
+    .ant-spin-dot {
+        width: 300px;
+        height: 300px;
+    }
+}

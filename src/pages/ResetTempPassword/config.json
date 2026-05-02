@@ -1,0 +1,60 @@
+{
+    "inputs": {
+        "email": {
+            "id": "email",
+            "name": "email",
+            "label": "Enter Email Address",
+            "required": true,
+            "disabled": true,
+            "placeholder": "Enter Email Address",
+            "validationMessages": {
+                "required": "Email is required",
+                "pattern": "Invalid email address. Please enter a valid email"
+            },
+            "inputConfig": {
+                "regexp": "^\\w+([\\.-]?\\w+)@\\w+([\\.-]?\\w+)(\\.\\w{2,3})+$"
+            }
+        },
+        "oldPassword": {
+            "id": "oldPassword",
+            "name": "oldPassword",
+            "label": "Enter Old Password",
+            "required": true,
+            "placeholder": "Enter Old Password",
+            "validationMessages": {
+                "required": "Old Password is required"
+            },
+            "inputConfig": {
+                "minLength": 8,
+                "pattern": "Password must contain at least 8 characters, including one uppercase, one lowercase, one number and one special character"
+            }
+        },
+        "Password": {
+            "id": "password",
+            "name": "password",
+            "label": "Enter New Password",
+            "required": true,
+            "placeholder": "Enter New Password",
+            "validationMessages": {
+                "required": "Please confirm new password"
+            },
+            "inputConfig": {
+                "minLength": 8
+            }
+        },
+        "confirmPassword": {
+            "id": "confirmPassword",
+            "name": "confirmPassword",
+            "label": "Re-Enter New Password",
+            "required": true,
+            "placeholder": "Re-Enter Password",
+            "validationMessages": {
+                "required": "Please confirm your password",
+                "mismatch": "Passwords do not match. Please re-enter the password."
+            },
+            "inputConfig": {
+                "minLength": 8
+            }
+        }
+    }
+}

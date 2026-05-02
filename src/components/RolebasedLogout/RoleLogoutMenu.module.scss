@@ -1,0 +1,83 @@
+@import "../../styles/base/variables.module";
+
+.roleLogoutMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    margin: 0 0 1.25rem 0;
+}
+
+.roleButton {
+    display: flex;
+    justify-content: flex-start;
+    height: 3.3125rem;
+    border-radius: $buttonRadius;
+    background-color: $table-bg-color;
+    border: 0.0625rem solid $logo-border-color;
+    width: 100%;
+}
+@media (max-width: 991px) {
+    /* Or choose your breakpoint here */
+    .roleButtonWrapper {
+        display: none; /* Hide RoleButton on smaller screens */
+    }
+}
+
+.userIcon {
+    width: 1.875rem;
+    height: 1.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin-right: 0.625rem;
+    :global {
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.userName {
+    font-weight: bold;
+    font-size: 1.0625rem;
+    color: $primay-text-color;
+}
+
+.roleText {
+    font-size: 0.75rem;
+    color: $placeholder-primary-text-color;
+    text-transform: capitalize;
+}
+
+.logoutWrapper {
+    margin: 0.625rem 0 0 0;
+}
+
+.logout {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: $secondary-text-color;
+}
+
+/* Hide text in smaller screens */
+.hiddenText {
+    @media (max-width: 991px) {
+        display: none; /* Hide text in smaller screens */
+    }
+}
+
+.showIconOnly {
+    @media (min-width: 991px) {
+        /* Show icon only for logout on small screens */
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,91 @@
+.titleContainer{
+    width: 17.4375rem;
+    height: 3.625rem;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+    position: relative;
+}
+
+.title{
+    padding: 0;
+    margin: 0;
+}
+
+.imageContainer{
+    width: auto;
+    height: 9.375rem;
+    background-color: #F5ECC7;
+    border-radius: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.elipse{
+    overflow: hidden;
+    height: 9.375rem;
+    border-radius: 1.25rem;
+}
+
+.elipseContainer{
+    width: 100%;
+    height: 8.375rem;
+    border-radius: 50%;
+    background-image: url('../../../assets/Image/imageBanner.png');
+    margin-top: 6.0625rem;
+}
+
+.innerTitle{
+    width: 15.75rem;
+    height: 3.625rem;
+    margin-top: 1rem;
+    margin-left: 1.25rem;
+    position: absolute;
+    :global{
+        .ant-typography{
+            font-family: "Passion One", sans-serif;
+            font-weight: 900;
+        }
+    }
+}
+
+.buttonText{
+    background-color: #FCCA07;
+    border-radius: 3.75rem;
+    width: 7.125rem;
+    height: 2.3125rem;
+    margin-top: 0.5rem;
+}
+
+.imageBannerContainer{
+    width: 3.625rem;
+    height: 7.0738rem;
+    margin-left: 16.4375rem;
+    margin-bottom: 1.1763rem;
+    position: absolute;
+    margin-top: 1.125rem;
+    margin-right: 0.9375rem;
+    animation: heartbeat 3s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1); 
+    }
+    30% {
+        transform: scale(1.1); 
+    }
+    50% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.imageBanner{
+    width: 3.625rem;
+    height: 7.0738rem;
+    object-fit: contain;
+}

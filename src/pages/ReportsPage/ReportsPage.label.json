@@ -1,0 +1,17 @@
+{
+    "pageTitle": "Summary Report",
+    "newFeaturesMessage": "New Features Coming Soon",
+    "totalProfitLabel":"Total Profit",
+    "salesGrowthLabel": "Sales Growth",
+    "totalOrderLabel": "Total Orders",
+    "cancelOrderLabel": "Cancel Orders",
+    "revenueLabel":{  
+        "heading" : "Revenue Breakdown",
+        "subHeading": "This week sales reports"
+    },
+    "regionalFestivalLabel":{
+        "heading": "Regional Festival Forecast",
+        "subHeading": "This week sales reports"
+    }
+}
+  

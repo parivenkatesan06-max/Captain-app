@@ -1,0 +1,41 @@
+@import "../../styles/base/variables.module";
+ 
+.InputForms {
+    :global {
+        .ant-form-item-row {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1.125rem; /* 18px */
+            position: relative;
+
+            @media (max-width: 1024px) {
+                width: 18.75rem;
+            }
+            @media (max-width: 767px) {
+                width: 27.0625rem;
+            }
+        }
+        .ant-form-item-label {
+            padding: 0 0 0.625rem; /* 10px */
+        }
+        .ant-input {
+            height: 3.25rem; /* 52px */
+        }
+    }
+}
+.checkboxText {
+    white-space: nowrap;
+}
+.customInput {
+    height: 3.25rem; /* 52px */
+    align-items: center;
+}
+.forgotPassword {
+    display: flex;
+    justify-content: end;
+}
+.linkTab{ 
+    color: $link-primary;
+    white-space: nowrap;
+    margin-left: 0.625rem;
+}

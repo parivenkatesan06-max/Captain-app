@@ -1,0 +1,22 @@
+{
+  "display": {
+    "blocks": {
+      "banks": {
+        "name": "Pay via UPI",
+        "instruments": [
+          {
+              "method": "upi"
+          },
+          {
+            "method": "netbanking"
+        }
+        ]
+      }
+    },
+    "sequence": ["block.banks"],
+    "preferences": {
+      "show_default_blocks": false
+    }
+  } 
+}
+  

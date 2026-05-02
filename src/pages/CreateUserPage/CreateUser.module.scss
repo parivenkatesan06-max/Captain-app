@@ -1,0 +1,78 @@
+@import "../../styles/base/variables.module";
+
+.signupRow {
+    background-color: $login-background-color;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1.875rem;
+    min-width: -webkit-fill-available;
+    position: relative; 
+    margin-bottom: 2rem;
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0.625rem;
+    }
+}
+
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem 3rem 2rem;
+    height:auto;
+    @media (max-width: 767px) {
+        padding: 0.9375rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.formContainer {
+    :global {
+        .ant-segmented {
+            margin-bottom: 2rem;
+            width: 100%;
+            border-radius: 30px;
+        }
+        .ant-segmented-item {
+            padding: 0.875rem;
+            border-radius: 20px;
+        }
+        .ant-segmented-item-label {
+            min-height: 16px;
+        }
+    }
+}
+
+.signupSVG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    border-radius: 1.875rem;
+}
+
+.buttonContainer {
+    margin-top: 2.1875rem;
+    align-items: end;
+    width: 100%;
+    @media (max-width: 767px) {
+        height: 0rem;
+        margin-top: 3.5rem;
+    }
+}
+
+.nameInputForms {
+    :global {
+        .ant-form-item {
+            width: 50%;
+        }
+        .ant-form-item-label {
+            width: 50%;
+        }
+
+    }
+}

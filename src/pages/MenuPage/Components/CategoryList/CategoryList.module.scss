@@ -1,0 +1,49 @@
+@import "../../../../styles/base/variables.module";
+
+.categoryLabel {
+    font-size: 0.938rem;
+    font-weight: 500;
+    color: $secondary-text-color;
+    :global{
+        .ant-card-body{
+            padding: 0.625rem;
+        }
+    }
+}
+
+.name {
+    flex-grow: 1;
+    :global{
+        .ant-input{
+            width: 90%;
+        }
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 0.5rem; 
+}
+
+.iconsStyle {
+    color: $table-icon-color;
+    background-color: $tableView-bg-color;
+    border-radius: 50%;
+    height: 1.625rem;
+    width: 1.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $table-icon-color;
+}
+
+.pagination {
+    margin-top: 2rem;
+}
+
+.spinContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

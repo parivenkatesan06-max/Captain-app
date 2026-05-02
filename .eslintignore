@@ -1,0 +1,11 @@
+.gitignore
+.prettierignore
+package-lock.json
+.idea/
+.git/
+.svn/
+.husky
+node_modules
+public
+build
+dist

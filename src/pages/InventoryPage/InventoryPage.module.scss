@@ -1,0 +1,30 @@
+@import "../../styles/base/variables.module";
+
+.uploadIcon {
+    color: $tableView-bg-color;
+    background-color: $table-icon-color;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid $table-icon-color;
+}
+
+.downloadIcon {
+    color: $table-icon-color;
+    background-color: $tableView-bg-color;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid $table-icon-color;
+}
+.inventoryContainer {
+    width: 100%;
+    height: 80%;
+    position: relative;
+}

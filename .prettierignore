@@ -1,0 +1,14 @@
+.gitignore
+.prettierignore
+package-lock.json
+.idea/
+.git/
+.svn/
+.husky
+node_modules/
+coverage
+build
+dist
+
+# Ignore all HTML files:
+*.html

@@ -1,0 +1,19 @@
+{
+  "qrCodeTitle": "QR Code",
+  "qrTitle": "Manage QR Codes",
+  "table": "Table Information",
+  "DeleteButtonLabel": "Delete",
+  "downloadButtonLabel": "Download",
+  "generateButtonLabel": "Generate QR",
+  "updateButtonLabel": "Update",
+  "updateSuccessLabel": "QR code updated successfully!",
+  "qrFailureError": "{message}",
+  "updateFailed": "Error: updateFailed",
+  "addIconLabel": "Generate New QR code",
+  "addQRCodeLabel": "Add QR Code",
+  "editQRCodeLabel": "Edit QR Code",
+  "cancelButtonLabel": "Cancel",
+  "previewTitle": "Preview QR Code",
+  "successMessage": "QR code generated successfully",
+  "qrScreens": "List Screens"
+}

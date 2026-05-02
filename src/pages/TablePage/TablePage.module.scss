@@ -1,0 +1,27 @@
+@import "../../styles/base/variables.module";
+
+.container {
+    // height: 665px;
+    top: 213px;
+    left: 366px;
+    gap: 0px;
+    border-radius: 30px;
+    padding: 40px;
+    background-color: $tableView-secondary-bg-color;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    margin-bottom: 2rem;
+}
+
+.statusLagend {
+    position: fixed;
+    bottom: 0;       
+    left: 0;        
+    right: 0;        
+    display: flex;  
+    justify-content: space-between; 
+    padding: 10px;   
+    background-color: $table-bg-color; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

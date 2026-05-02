@@ -1,0 +1,142 @@
+@import "../../../styles/base/variables.module";
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    padding-bottom: 5rem;
+    position: absolute;
+    @media (min-width: 767px) {
+          width: 840px;
+      }
+}
+.contentContainer{
+    width: auto; 
+    height: 11.875rem;
+    gap: 1.125rem;
+}
+
+.imageLogo{
+    width: 2.5625rem;
+    height: 2.5625rem;
+}
+
+.logoContainer{
+    width: auto;
+    height: 2.5625rem;
+    margin: 1.25rem 1.25rem 1.125rem 1.25rem;
+    justify-content: center;
+}
+.headerContainer{
+    margin: 0px 0px 1.25rem 0px;
+    width: auto;
+    height: 1.6875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: Montserrat;
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.6763rem;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.tableInfo {
+    width: 5.9425rem;
+    height: 1.6875rem;
+    padding: 0.1875rem 0px 0px 0px;
+    gap: 0.625rem;
+}
+
+.specialOfferContainer {
+    width: 100%;
+}
+
+
+.searchInput {
+    width: 100%;
+    height: 2.875rem;
+    border-radius: 2.5rem;
+    background-color: $mobile-background-color;
+    color: $primay-text-color;
+    :global {
+        .ant-divider-vertical{
+            margin: 0px;
+        }
+    }
+}
+
+.micIcon {
+    color: $button-primary-bg-color;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.categoryButton {
+    width: 100%;
+    height: 5.125rem;
+    gap: 0.9375rem;
+    padding: 0.625rem 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; 
+}
+/* For small mobile screens (up to 320px) */
+@media screen and (max-width: 320px) {
+    .categoryButton {
+        max-width: 18rem;  /* Adjust to your desired max-width */
+    }
+}
+
+/* For medium mobile screens (up to 375px) */
+@media screen and (max-width: 375px) {
+    .categoryButton {
+        max-width: 20rem;  /* Adjust to your desired max-width */
+    }
+}
+
+/* For large mobile screens (up to 425px) */
+@media screen and (max-width: 425px) {
+    .categoryButton {
+        max-width: 22rem;  /* Adjust to your desired max-width */
+    }
+}
+
+/* For extra-large mobile screens (up to 480px) */
+@media screen and (max-width: 480px) {
+    .categoryButton {
+        max-width: 20rem;  /* Adjust to your desired max-width */
+    }
+}
+
+.ant-spin-fullscreen {
+    background-color: $mobile-secondary-text-color;
+}
+
+.ant-spin-fullscreen .spinWrapper .ant-spin-text {
+    color: $mobile-secondary-text-color;
+}
+.spinContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tabClass{
+    :global{
+        .ant-tabs-nav-wrap{
+            margin-left: 1rem;
+            margin-right: 1rem ;
+        }
+        .ant-tabs-tab-btn{
+            font-size: 16px;
+        }
+    }
+}

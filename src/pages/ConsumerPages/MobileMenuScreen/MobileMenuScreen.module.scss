@@ -1,0 +1,85 @@
+@import "../../../styles/base/variables.module";
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    overflow-y: auto;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    margin-bottom: 125px;
+    position: absolute;
+    @media (min-width: 767px) {
+        width: 840px;
+    }
+}
+.searchInput {
+    width: auto;
+    height: 2.875rem;
+    border-radius: 2.5rem;
+    margin-top: 1rem;
+    background-color: $mobile-background-color;
+    color: $primay-text-color;
+    :global {
+        .ant-divider-vertical{
+            overflow: hidden;
+            margin: 0px;
+        }
+    }
+}
+.categoryMenuButton {
+    width: 100%;
+    height: 5.125rem;
+    gap: 0.9375rem;
+    padding: 0.625rem 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; 
+}
+.tabClass{
+    :global{
+        .ant-tabs-nav-wrap{
+            margin-left: 1rem;
+            margin-right: 1rem ;
+        }
+        .ant-tabs-tab-btn{
+            font-size: 12px;
+        }
+    }
+}
+
+/* For small mobile screens (up to 320px) */
+@media screen and (max-width: 320px) {
+    .categoryMenuButton {
+        max-width: 18rem;  /* Adjust to your desired max-width */
+    }
+}
+
+/* For medium mobile screens (up to 375px) */
+@media screen and (max-width: 375px) {
+    .categoryMenuButton {
+        max-width: 20rem;  /* Adjust to your desired max-width */
+    }
+}
+
+/* For large mobile screens (up to 425px) */
+@media screen and (max-width: 425px) {
+    .categoryMenuButton {
+        max-width: 22rem;  /* Adjust to your desired max-width */
+    }
+}
+
+/* For extra-large mobile screens (up to 480px) */
+@media screen and (max-width: 480px) {
+    .categoryMenuButton {
+        max-width: 20rem;  /* Adjust to your desired max-width */
+    }
+}
+.spinContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 4rem;
+}

@@ -1,0 +1,92 @@
+@import "../../styles/base/variables.module";
+
+.menuContainer{
+    margin-bottom: 1rem;
+}
+.menuList {
+    position: relative;
+    width: 12.075rem;
+}
+
+.menuList:hover .modal {
+    visibility: visible;  
+    opacity: 1;          
+    width: 12.075rem;
+}
+
+.modal {
+    visibility: hidden; 
+    opacity: 0;         
+    position: absolute;
+    bottom: 6.25rem;
+    left: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    border-radius: 0.625rem;
+    background-color: rgb(4 2 0 / 80%);
+    width: 12.075rem;
+    height: 8.8125rem;
+}
+
+.editDownload {
+    position: absolute;
+    bottom: -6.25rem;
+    width: 100%;
+    height: 6.25rem;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $table-bg-color;
+    border-radius: 0.625rem;
+}
+
+.spinWrapper {
+    font-size: 50px;
+    :global{
+        .anticon-loading {
+            font-size: 50px;
+            color: $button-primary-bg-color;
+        }
+        .ant-spin-dot {
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
+
+.ant-spin-fullscreen {
+    background-color: $loader-backgroud-color;
+}
+
+.ant-spin-fullscreen .spinWrapper .ant-spin-text {
+    color: $button-primary-bg-color;
+}
+.spinContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.spinDataContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: $button-primary-bg-color;
+}
+.boldLabel {
+    font-weight: bold;
+}
+.tabClass{
+    :global{
+        .ant-tabs-nav-wrap{
+            margin-left: 1rem;
+        }
+        .ant-tabs-tab-btn{
+            font-size: 16px;
+        }
+    }
+}

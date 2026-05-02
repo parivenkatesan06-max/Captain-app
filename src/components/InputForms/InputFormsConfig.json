@@ -1,0 +1,18 @@
+{
+    "inputs": {
+        "username": {
+            "id": "username",
+            "name": "username",
+            "label": "Enter User Name",
+            "required": true,
+            "placeholder": "Enter User Name",
+            "validationMessages": {
+                "required": "User name is required"
+            }
+        }
+    },
+    "checkboxText": {
+        "beforeText": "I agree to the ",
+        "hrefText": "Terms & Conditions"
+    }
+}

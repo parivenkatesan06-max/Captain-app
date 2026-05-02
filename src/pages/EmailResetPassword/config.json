@@ -1,0 +1,32 @@
+{
+    "inputs": {
+        "password": {
+            "id": "password",
+            "name": "password",
+            "label": "Enter Password",
+            "required": true,
+            "placeholder": "Enter Password",
+            "validationMessages": {
+                "required": "Password is required"
+            },
+            "inputConfig": {
+                "minLength": 8,
+                "pattern": "Password must contain at least 8 characters, including one uppercase, one lowercase, one number and one special character"
+            }
+        },
+        "confirmPassword": {
+            "id": "confirmPassword",
+            "name": "confirmPassword",
+            "label": "Confirm Password",
+            "required": true,
+            "placeholder": "Re-Enter Password",
+            "validationMessages": {
+                "required": "Please confirm your password",
+                "mismatch": "Passwords do not match. Please re-enter the password."
+            },
+            "inputConfig": {
+                "minLength": 8
+            }
+        }
+    }
+}

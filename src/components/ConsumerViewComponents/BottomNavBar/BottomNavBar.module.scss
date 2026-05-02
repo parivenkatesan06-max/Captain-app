@@ -1,0 +1,129 @@
+@import "../../../styles/base/variables.module";
+
+.continueButton {
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    height: 5rem;
+    z-index: 1000;
+    border-radius: 0.625rem;
+    background-color: $mobile-background-color;
+    @media (min-width: 767px) {
+        width: 840px;
+        left: auto;
+    }
+}
+
+.counterMargin {
+    @media (min-width: 767px) {
+        margin-left: 16.875rem;
+    }
+}
+.bottomNavBarContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    @media (min-width: 767px) {
+        width: 840px;
+        left: auto;
+    }
+
+    .fullWidthButton {
+        width: 100%;
+        height: 3rem;
+        background-color: $mobile-secondary-text-color;
+        color: $mobile-background-color;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 0.625rem 0.625rem 0 0;
+    }
+
+    .bottomNavBar {
+        background-color: $mobile-background-color;
+        padding: 0.875rem 0.875rem;
+        height: 5rem;
+        border-radius: 0.625rem 0.625rem 0rem 0rem;
+        display: flex;
+        justify-content: space-evenly;
+        @media (min-width: 767px) {
+            display: none;
+         }
+        :global {
+            .ant-menu-item {
+                gap: 0.3125rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+
+                &:hover {
+                    color: $mobile-secondary-text-color;
+                }
+
+                &.ant-menu-item-selected {
+                    color: $mobile-secondary-text-color;
+                    text-decoration: none;
+                }
+            }
+
+            .ant-menu-title-content {
+                width: 2.375rem;
+                height: 0.9375rem;
+                margin-inline-start: 0rem;
+                justify-content: center;
+            }
+            .ant-menu-item-icon + span, 
+            .ant-menu-submenu-title .ant-menu-item-icon + span,
+            .ant-menu-item .anticon + span,
+            .ant-menu-submenu-title .anticon + span {
+                margin-inline-start: 0rem;
+            }
+
+            .ant-menu-item-selected::after {
+                display: none !important;
+            }
+        }
+    }
+}
+.itemCount {
+    width: fit-content;
+    padding-left: 1.25rem;
+    height: 1.125rem;
+}
+
+.modalFooter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.paymentOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.paymentCard {
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    &.selected {
+        border: 1px solid #d87500;
+        box-shadow: 0 4px 20px #d87500;
+    }
+}
+.paymentRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.radioLabel {
+    margin-right: 8px;
+}
+
+.iconStyle {
+    font-size: 24px;
+}

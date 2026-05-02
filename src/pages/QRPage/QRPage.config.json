@@ -1,0 +1,43 @@
+{
+    "Hotel": {
+        "inputs": {
+            "entityname": {
+                "id": "entityname",
+                "name": "entityname",
+                "label": "Entity Name",
+                "placeholder": "Enter Entity Name",
+                "defaultValue": "",
+                "disabled": true
+            },
+            "entitycode": {
+                "id": "entitycode",
+                "name": "entitycode",
+                "label": "Entity Code",
+                "placeholder": "Enter Entity Code",
+                "defaultValue": "",
+                "disabled": true
+            },
+            "identifier": {
+                "id": "identifier",
+                "name": "identifier",
+                "label": "Table Number",
+                "placeholder": "Enter Table Number"
+            }
+        }
+    },
+    "Theatre": {
+        "inputs": {
+            "clientCode": {
+                "id": "entityCode",
+                "name": "entityCode",
+                "label": "Screen Name",
+                "defaultValue": ""
+            },
+            "seatCode": {
+                "id": "seatCode",
+                "name": "seatCode",
+                "label": "Seat Number"
+            }
+        }
+    }
+}

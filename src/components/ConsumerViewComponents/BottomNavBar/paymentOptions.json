@@ -1,0 +1,8 @@
+{
+    "paymentOptions": [
+      { "value": "card", "label": "Card", "icon": "CreditCardOutlined" },
+      { "value": "upi", "label": "Upi", "icon": "MobileOutlined" },
+      { "value": "cash", "label": "Cash", "icon": "WalletOutlined" }
+    ]
+  }
+  

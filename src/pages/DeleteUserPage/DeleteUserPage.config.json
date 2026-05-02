@@ -1,0 +1,27 @@
+{
+    "inputs": {
+        "email": {
+            "id": "email",
+            "name": "email",
+            "label": "Captain Name",
+            "required": true,
+            "placeholder": "",
+            "validationMessages": {
+                "required": "Email is required"
+            }
+        },
+        "password": {
+            "id": "password",
+            "name": "password",
+            "label": "Admin Password",
+            "required": true,
+            "placeholder": "",
+            "validationMessages": {
+                "required": "Password is required"
+            },
+            "inputConfig": {
+                "minLength": 8
+            }
+        }
+    }
+}

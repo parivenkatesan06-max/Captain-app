@@ -1,0 +1,15 @@
+{
+    "title": "Title",
+    "category": "Category",
+    "quantity": "Quantity",
+    "price": "Price",
+    "image": "Image",
+    "uploadImage": "Upload Image",
+    "saveButton": "Save",
+    "cancelButton": "Cancel",
+    "pleaseCompleteFields": "Please complete all required fields.",
+    "inputTitlePlaceholder": "New Title",
+    "inputCategoryPlaceholder": "Category",
+    "inputPricePlaceholder": "Price"
+}
+  

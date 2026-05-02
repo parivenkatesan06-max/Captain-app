@@ -1,0 +1,9 @@
+@import "../../styles/base/variables.module"; 
+
+.screenContainer {
+    padding: 1rem;
+    background-color: $table-bg-color;
+    border-radius: 0.875rem;
+    margin-bottom: 2rem;
+  }
+  

@@ -1,0 +1,7 @@
+@import "../../../styles/base/variables.module";
+
+.buttonBase {
+    min-width: 8.75rem;
+    height: 2.5rem;
+    border: 1px solid $mobile-secondry-button-color;
+}

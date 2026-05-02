@@ -1,0 +1,101 @@
+@import "../../styles/base/variables.module";
+
+.printButtonWrapper {
+    margin-top: 1rem;
+}
+.printButton {
+    padding-left: 6rem;
+  padding-right: 6rem;
+  border-radius: 2rem;
+  background-color: $button-primary-bg-color;
+}
+
+.identifier {
+    height: 3.75rem;
+    width: 3.75rem;
+    background-color: $button-primary-bg-color;
+    border-radius: 0.875rem;
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: $table-bg-color;
+    text-transform: capitalize;
+}
+
+.orderSummary {
+    margin-top: 1rem;
+    font-weight: 600;
+    border: 1px solid $border-color;
+    padding: 1.5rem;
+    border-radius: 0.875rem;
+}
+
+.orderTableWrapper {
+    border: 1px solid $border-color;
+    border-radius: 0.875rem;
+    padding: 1rem;
+}
+
+.orderContainer {
+    padding: 1rem;
+    background-color: $table-bg-color;
+    gap: 0.5rem;
+    border-radius: 0.875rem;
+    min-height: 41rem;
+}
+
+.invoiceContainer {
+    line-height: 1.8;
+    padding: 1.25rem;
+    display: none;
+}
+
+.invoiceRow {
+    margin-bottom: 0.625rem;
+}
+
+.invoiceLabel {
+    font-weight: bold;
+    margin-right: 0.625rem;
+}
+
+.companyDetails {
+    display: none;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logoImage {
+    width: 3.3125rem;
+    height: auto;
+}
+
+.clientName {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.address {
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-top: 2px dashed #333;
+    padding-top: 0.625rem;
+    margin-top: 0.625rem;
+
+}
+
+.contactInfo {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+}
+.eyeIcon {
+    color:  $table-icon-color;
+    background-color: $tableView-bg-color;
+    border-radius: 50%;
+    height: 1.625rem;
+    width: 1.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.125rem solid  $table-icon-color;
+}

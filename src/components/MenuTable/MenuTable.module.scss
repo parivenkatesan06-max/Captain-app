@@ -1,0 +1,70 @@
+@import "../../styles/base/variables.module";
+
+.tableCardContainer {
+    height: 13.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardContainer {
+    font-size: 1.375rem;
+    font-weight: 600;
+    border-radius: 1.875rem;
+    width: 18.75rem;
+    height: 9.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--color);
+
+    &:hover {
+        box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+    }
+}
+
+.cardText {
+    width: 17.5rem;
+    height: 4rem;
+    padding: 2.906rem 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardNumber {
+    height: 1.688rem;
+    margin: 0;
+    color: $secondary-text-color;
+}
+
+.cardPrice {
+    font-size: 1.25rem;
+    font-weight: 500;
+    height: 1.5rem;
+}
+
+.cardNotOccupied {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: $primay-menutable-text-color;
+}
+
+.tableLine {
+    height: 0.75rem;
+    width: 6.563rem;
+    border-radius: 2.5rem;
+    margin: 5px;
+    background-color: var(--color);
+
+    &.topLine {
+        margin-bottom: 0.625rem;
+    }
+
+    &.bottomLine {
+        margin-top: 0.625rem;
+    }
+}

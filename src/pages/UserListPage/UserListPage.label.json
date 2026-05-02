@@ -1,0 +1,15 @@
+{
+    "pageTitle": "Users List",
+    "editButtonLabel": "Edit",
+    "deleteButtonLabel": "Delete",
+    "cancel":"Cancel",
+    "deleteConfirmationTitle": "Delete User",
+    "deleteConfirmationMessage": "You want to delete this Role ?",
+    "deleteSuccessMessage": "User deleted successfully!",
+    "deleteErrorMessage": "Failed to delete user.",
+    "failedToLoadUsers": "Failed to load users.",
+    "actions": "Actions",
+    "role": "Category",
+    "title": "Title"
+}
+  

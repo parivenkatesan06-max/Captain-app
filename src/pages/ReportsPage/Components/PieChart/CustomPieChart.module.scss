@@ -1,0 +1,94 @@
+@import "../../../../styles/base/variables.module";
+
+.totalContainer {
+  width: 25rem;
+  height: 29.375rem;
+  background-color: $table-bg-color;
+}
+
+.pieChartContainer {
+  background-color: $table-bg-color;
+  border-radius: 0.625rem;
+  margin-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 1400px) {
+  .pieChartContainer {
+      margin-left: 0px;
+  }
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  line-height: 1.1875rem;
+  padding-top: 0.9375rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subHeader {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 0.9375rem;
+  line-height: 1.2188rem;
+  padding-top: 0.3125rem;
+}
+
+.chartText {
+  font-size: 0.875rem;
+  font-weight: 400;
+  fill: $primay-text-color;
+}
+
+.backgroundRect {
+  x: 10.3125rem;
+  y: 12.6875rem;
+  width: 4.125rem;
+  height: 1.6875rem;
+  rx: 10;
+  ry: 10;
+}
+
+.textPercentage {
+  fill: $table-bg-color;
+  font-size: 0.875rem;
+}
+
+.legendContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.625rem;
+}
+
+.legendText {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.legendDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.customizedTooltip{
+  background-color: $bg-color;
+  color: $secondary-text-color;
+  padding: 2px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}

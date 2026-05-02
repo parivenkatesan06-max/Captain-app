@@ -1,0 +1,45 @@
+
+.inputStyle {
+    :global {
+        .ant-input {
+            height: 3rem;
+            width: 20rem;
+        }
+        .ant-select{
+            height: 3rem;
+            width: 20rem;
+        }
+        .ant-input-number-affix-wrapper{
+            height: 3rem;
+            width: 40%;
+        }
+    }
+}
+.buttonImage {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+.uploadContainer{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.addButton{
+    :global {
+        .ant-form-item-control-input-content {
+            margin-top: 24px;
+        }
+    }
+}
+.spinContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

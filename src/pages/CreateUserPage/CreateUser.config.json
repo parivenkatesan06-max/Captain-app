@@ -1,0 +1,88 @@
+{
+    "inputs": {
+        "firstName": {
+            "id": "firstName",
+            "name": "firstName",
+            "label": "First Name",
+            "required": true,
+            "placeholder": "First Name",
+            "validationMessages": {
+                "required": "Please Enter First Name"
+            },
+            "inputConfig": {
+                "regexp": "^[A-Za-z]+$",
+                "pattern": "First name must contain only letters"
+            }
+        },
+        "lastName": {
+            "id": "lastName",
+            "name": "lastName",
+            "label": "Last Name",
+            "required": true,
+            "placeholder": "Last Name",
+            "validationMessages": {
+                "required": "Please Enter Last Name"
+            },
+            "inputConfig": {
+                "regexp": "^[A-Za-z]+$",
+                "pattern": "Last name must contain only letters"
+            }
+        },
+        "mobile": {
+            "id": "mobile",
+            "name": "mobile",
+            "label": "Mobile Number",
+            "required": true,
+            "placeholder": "Enter Mobile Number",
+            "validationMessages": {
+                "required": "Please Enter Mobile Number"
+            },
+            "inputConfig": {
+                "minLength": 10,
+                "maxLength": 10,
+                "regexp": "^[0-9]{10}$"
+            }
+        },
+        "email": {
+            "id": "email",
+            "name": "email",
+            "label": "Enter Email Address",
+            "required": true,
+            "placeholder": "Enter Email Address",
+            "validationMessages": {
+                "required": "Email is required",
+                "pattern": "Invalid email address. Please enter a valid email"
+            },
+            "inputConfig": {
+                "regexp": "^\\w+([\\.-]?\\w+)@\\w+([\\.-]?\\w+)(\\.\\w{2,3})+$"
+            }
+        },
+        "password": {
+            "id": "password",
+            "name": "password",
+            "label": "Enter Password",
+            "required": true,
+            "placeholder": "Enter Password",
+            "validationMessages": {
+                "required": "Password is required",
+                "pattern": "Password must contain at least 8 characters, including one uppercase, one lowercase, one number and one special character"
+            },
+            "inputConfig": {
+                "minLength": 8,
+                "regexp": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
+            }
+        },
+        "confirmPassword": {
+            "id": "confirmPassword",
+            "name": "confirmPassword",
+            "label": "Re-Enter Password",
+            "placeholder": "Re-Enter Password",
+            "validationMessages": {
+                "mismatch": "Passwords do not match. Please re-enter the password."
+            },
+            "inputConfig": {
+                "minLength": 8
+            }
+        }
+    }
+}

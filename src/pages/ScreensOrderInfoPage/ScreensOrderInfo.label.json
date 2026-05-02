@@ -1,0 +1,30 @@
+{
+    "breadcrumbs": {
+      "screens": "Screens",
+      "screenList": "Screen List"
+    },
+    "screenInfoTitle": "Screen’s Info",
+    "noDataAvailable": "No Data Available",
+    "noOrderDetails": "No Order Details",
+    "noOrderDetailsSubTitle": "Order details are unavailable for this seat.",
+    "orderDetails": {
+      "category": "Category",
+      "quantity": "Quantity",
+      "price": "Price",
+      "title":"Order Preview"
+    },
+    "orderSummary": {
+      "items": "Items",
+      "subtotal": "Subtotal",
+      "cgst": "CGST (9%)",
+      "sgst": "SGST(9%)",
+      "total": "Total"
+    },
+    "printButton": "Print",
+    "error": {
+      "status": "500",
+      "title": "500",
+      "subTitle": "Sorry, something went wrong."
+    }
+  }
+  

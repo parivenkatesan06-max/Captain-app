@@ -1,0 +1,21 @@
+.pageHeaderWrapper {
+    background-color: transparent;
+    padding-top: 1.563rem;
+}
+
+.headerSearchInput {
+    width: 26rem;
+    height: 2.875rem;
+    border-radius: 2.5rem;
+    background-color: $numberInput-text-color;
+    color: $primay-text-color;
+    @media (min-width: 967px) {
+        width: 15.625rem;
+    }
+    @media (min-width: 1110px) {
+        width: 18.75rem;
+    }
+    @media (min-width: 800px) {
+        width: 15.625rem;
+    }
+}

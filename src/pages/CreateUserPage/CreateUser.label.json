@@ -1,0 +1,12 @@
+{
+    "pageTitle": "Create New Client Admin",
+    "captainLabel": "Captain",
+    "kitchenerLabel": "Kitchener",
+    "comingSoonMessage": "This feature is coming soon! We are working hard to bring the Kitchener experience to you. Stay tuned for updates!",
+    "cancelButtonLabel": "Cancel",
+    "submitButtonLabel": "Create Account",
+    "linkText": "Already have an account?",
+    "linkLabel": "Login here",
+    "loginLink": "/login"
+  }
+  

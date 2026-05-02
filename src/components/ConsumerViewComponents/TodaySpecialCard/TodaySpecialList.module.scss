@@ -1,0 +1,30 @@
+.todaySpecialOfferContainer {
+    width: auto;
+    margin-bottom: 1.25rem;
+}
+.todaySpecialList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.625rem;
+}
+
+.todaySpecialList::-webkit-scrollbar {
+    height: 0.5rem;
+}
+
+.todaySpecialList::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 0.625rem;
+}
+
+.todaySpecialList::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+.titleContainer {
+    width: auto;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
