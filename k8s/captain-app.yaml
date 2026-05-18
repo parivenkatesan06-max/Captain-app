@@ -1,0 +1,83 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: captain-app
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: captain-app-deployment
+  namespace: captain-app
+  labels:
+    app: captain-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: captain-app
+  template:
+    metadata:
+      labels:
+        app: captain-app
+    spec:
+      containers:
+        - name: captain-app
+          # REPLACE this image with your built image (registry/username/image:tag)
+          image: your-registry/your-username/captain-app:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 15
+            periodSeconds: 20
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: captain-app-service
+  namespace: captain-app
+  labels:
+    app: captain-app
+spec:
+  type: ClusterIP
+  selector:
+    app: captain-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+
+---
+# Optional Ingress (requires an Ingress controller like nginx-ingress or Traefik)
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: captain-app-ingress
+  namespace: captain-app
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+    - host: example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: captain-app-service
+                port:
+                  number: 80
+
+# To use TLS, add a tls section and configure a TLS secret for the host above.
