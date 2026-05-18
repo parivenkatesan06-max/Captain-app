@@ -1,13 +1,14 @@
 name: CD - Build and Push Docker Image
 
 on:
-  push:
-    branches: [ main ]
+  push: {}
 
 jobs:
   build-and-push:
     name: Build and Push Docker Image
     runs-on: ubuntu-latest
+    env:
+      IMAGE_NAME: parivenkatesan/captain_app
 
     steps:
       - name: Checkout repository
@@ -29,9 +30,10 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/captain-app
+          images: ${{ env.IMAGE_NAME }}
           tags: |
             type=ref,event=branch
+            type=ref,event=tag
             type=sha
 
       - name: Build and push Docker image
